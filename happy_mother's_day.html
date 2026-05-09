@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="A heartfelt Mother's Day surprise — a letter, photos, and video made with love." />
+    <title>For Mom, With Love 💖</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Alex+Brush&family=Sacramento&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ═══════════ GATE SECTION ═══════════ -->
+    <section id="gate" class="gate active">
+        <div class="cute-bg">
+            <!-- Floating cute decorations -->
+            <svg class="cute-deco deco-flower1" viewBox="0 0 80 80" width="60" height="60">
+                <g opacity=".18">
+                    <circle cx="40" cy="25" r="12" fill="var(--rose)" />
+                    <circle cx="55" cy="40" r="12" fill="var(--rose)" />
+                    <circle cx="40" cy="55" r="12" fill="var(--rose)" />
+                    <circle cx="25" cy="40" r="12" fill="var(--rose)" />
+                    <circle cx="40" cy="40" r="8" fill="var(--blush)" />
+                </g>
+            </svg>
+            <svg class="cute-deco deco-flower2" viewBox="0 0 80 80" width="45" height="45">
+                <g opacity=".15">
+                    <circle cx="40" cy="25" r="12" fill="var(--blush)" />
+                    <circle cx="55" cy="40" r="12" fill="var(--blush)" />
+                    <circle cx="40" cy="55" r="12" fill="var(--blush)" />
+                    <circle cx="25" cy="40" r="12" fill="var(--blush)" />
+                    <circle cx="40" cy="40" r="8" fill="#fff" />
+                </g>
+            </svg>
+            <svg class="cute-deco deco-butterfly1" viewBox="0 0 60 40" width="50" height="34">
+                <g opacity=".14">
+                    <ellipse cx="20" cy="15" rx="16" ry="12" fill="var(--rose)" />
+                    <ellipse cx="40" cy="15" rx="16" ry="12" fill="var(--rose)" />
+                    <ellipse cx="22" cy="28" rx="10" ry="8" fill="var(--blush)" />
+                    <ellipse cx="38" cy="28" rx="10" ry="8" fill="var(--blush)" />
+                    <rect x="29" y="5" width="2" height="30" rx="1" fill="var(--crimson)" />
+                </g>
+            </svg>
+            <div class="cute-sparkle sp1">✦</div>
+            <div class="cute-sparkle sp2">✧</div>
+            <div class="cute-sparkle sp3">❀</div>
+            <div class="cute-sparkle sp4">✿</div>
+            <div class="cute-sparkle sp5">♡</div>
+            <div class="cute-sparkle sp6">✦</div>
+        </div>
+
+        <div class="gate-card">
+
+            <div class="mom-photo-wrap">
+                <div class="photo-glow"></div>
+                <div class="photo-frame-outer">
+                    <div class="photo-frame-inner">
+                        <img src="assets/mother.png" alt="Mom" class="mom-photo" />
+                    </div>
+                    <div class="frame-corner fc-tl"></div>
+                    <div class="frame-corner fc-tr"></div>
+                    <div class="frame-corner fc-bl"></div>
+                    <div class="frame-corner fc-br"></div>
+                </div>
+            </div>
+
+            <div class="gate-text">
+                <p class="gate-eyebrow">A gift for you, my dearest Inay!</p>
+                <h1 class="gate-title">Happy Mother's Day</h1>
+                <p class="gate-sub">Enter the secret word to open it, Inay!</p>
+            </div>
+
+            <div class="pw-form">
+                <div class="pw-input-wrap">
+                    <input type="password" id="pwInput" class="pw-input" placeholder="whisper the magic words..."
+                        autocomplete="off" spellcheck="false" />
+                    <button class="pw-toggle" id="pwToggle" type="button" onclick="togglePassword()"
+                        aria-label="Toggle password">
+                        <svg id="pwEyeIcon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--rose)"
+                            stroke-width="2" stroke-linecap="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </button>
+                    <div class="pw-underline"></div>
+                </div>
+                <button class="pw-btn" onclick="checkPassword()">
+                    <span>Open My Heart</span>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </button>
+                <p class="pw-error" id="pwError">Oops! Incorrect password, try again! 🥰</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ═══════════ HEARTS SCENE ═══════════ -->
+    <section id="tree-scene" class="tree-scene">
+        <div class="cute-bg">
+            <svg class="cute-deco deco-flower3" viewBox="0 0 80 80" width="55" height="55">
+                <g opacity=".16">
+                    <circle cx="40" cy="25" r="12" fill="var(--rose)" />
+                    <circle cx="55" cy="40" r="12" fill="var(--rose)" />
+                    <circle cx="40" cy="55" r="12" fill="var(--rose)" />
+                    <circle cx="25" cy="40" r="12" fill="var(--rose)" />
+                    <circle cx="40" cy="40" r="8" fill="var(--blush)" />
+                </g>
+            </svg>
+            <svg class="cute-deco deco-butterfly2" viewBox="0 0 60 40" width="44" height="30">
+                <g opacity=".13">
+                    <ellipse cx="20" cy="15" rx="16" ry="12" fill="var(--blush)" />
+                    <ellipse cx="40" cy="15" rx="16" ry="12" fill="var(--blush)" />
+                    <ellipse cx="22" cy="28" rx="10" ry="8" fill="var(--rose)" />
+                    <ellipse cx="38" cy="28" rx="10" ry="8" fill="var(--rose)" />
+                    <rect x="29" y="5" width="2" height="30" rx="1" fill="var(--crimson)" />
+                </g>
+            </svg>
+            <div class="cute-sparkle sp7">❀</div>
+            <div class="cute-sparkle sp8">✿</div>
+            <div class="cute-sparkle sp9">♡</div>
+            <div class="cute-sparkle sp10">✦</div>
+            <div class="cute-sparkle sp11">❁</div>
+            <div class="cute-sparkle sp12">✧</div>
+        </div>
+
+        <div class="tree-label">
+            <p class="tree-eyebrow">Touch a heart to open your surprise</p>
+            <h2 class="tree-title">Our Garden of Love</h2>
+        </div>
+
+        <!-- 3 Big Heart Cards -->
+        <div class="hearts-row">
+
+            <div class="heart-card" onclick="openSection('letter')">
+                <div class="heart-card-glow"></div>
+                <svg class="heart-card-svg" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="heartGrad1" cx="50%" cy="35%" r="60%">
+                            <stop offset="0%" stop-color="#ff6b8a" />
+                            <stop offset="100%" stop-color="var(--rose)" />
+                        </radialGradient>
+                    </defs>
+                    <path class="heart-card-shape shape-left" fill="url(#heartGrad1)"
+                        d="M60,95 C60,95 15,65 15,35 C15,20 25,10 40,10 C50,10 57,17 60,22 C63,17 70,10 80,10 C95,10 105,20 105,35 C105,65 60,95 60,95Z" />
+                    <ellipse cx="42" cy="30" rx="8" ry="6" fill="rgba(255,255,255,0.3)" transform="rotate(-20 42 30)" />
+                </svg>
+                <span class="heart-card-label">💌 Letter</span>
+            </div>
+
+            <div class="heart-card" onclick="openSection('gallery')">
+                <div class="heart-card-glow"></div>
+                <svg class="heart-card-svg" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="heartGrad2" cx="50%" cy="35%" r="60%">
+                            <stop offset="0%" stop-color="#ff4466" />
+                            <stop offset="100%" stop-color="var(--crimson)" />
+                        </radialGradient>
+                    </defs>
+                    <path class="heart-card-shape shape-center" fill="url(#heartGrad2)"
+                        d="M60,95 C60,95 15,65 15,35 C15,20 25,10 40,10 C50,10 57,17 60,22 C63,17 70,10 80,10 C95,10 105,20 105,35 C105,65 60,95 60,95Z" />
+                    <ellipse cx="42" cy="30" rx="8" ry="6" fill="rgba(255,255,255,0.3)" transform="rotate(-20 42 30)" />
+                </svg>
+                <span class="heart-card-label">📸 Photos</span>
+            </div>
+
+            <div class="heart-card" onclick="openSection('video')">
+                <div class="heart-card-glow"></div>
+                <svg class="heart-card-svg" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="heartGrad3" cx="50%" cy="35%" r="60%">
+                            <stop offset="0%" stop-color="#c04060" />
+                            <stop offset="100%" stop-color="var(--burgundy)" />
+                        </radialGradient>
+                    </defs>
+                    <path class="heart-card-shape shape-right" fill="url(#heartGrad3)"
+                        d="M60,95 C60,95 15,65 15,35 C15,20 25,10 40,10 C50,10 57,17 60,22 C63,17 70,10 80,10 C95,10 105,20 105,35 C105,65 60,95 60,95Z" />
+                    <ellipse cx="42" cy="30" rx="8" ry="6" fill="rgba(255,255,255,0.3)" transform="rotate(-20 42 30)" />
+                </svg>
+                <span class="heart-card-label">🎬 Video</span>
+            </div>
+
+            <div class="heart-card" onclick="openSection('reasons')">
+                <div class="heart-card-glow"></div>
+                <svg class="heart-card-svg" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="heartGrad4" cx="50%" cy="35%" r="60%">
+                            <stop offset="0%" stop-color="#ffb3c6" />
+                            <stop offset="100%" stop-color="#f2c4ce" />
+                        </radialGradient>
+                    </defs>
+                    <path class="heart-card-shape" fill="url(#heartGrad4)"
+                        d="M60,95 C60,95 15,65 15,35 C15,20 25,10 40,10 C50,10 57,17 60,22 C63,17 70,10 80,10 C95,10 105,20 105,35 C105,65 60,95 60,95Z" />
+                    <ellipse cx="42" cy="30" rx="8" ry="6" fill="rgba(255,255,255,0.3)" transform="rotate(-20 42 30)" />
+                </svg>
+                <span class="heart-card-label">💝 Why I Love You</span>
+            </div>
+
+        </div>
+
+        <button class="hug-btn" onclick="sendVirtualMessage()">
+            🤗 Love Notes
+        </button>
+    </section>
+
+
+    <!-- ═══════════ LETTER SCENE ═══════════ -->
+    <section id="letter-scene" class="sub-scene">
+        <div class="cute-bg">
+            <div class="cute-sparkle sp13">❀</div>
+            <div class="cute-sparkle sp14">♡</div>
+            <div class="cute-sparkle sp15">✿</div>
+            <svg class="cute-deco deco-flower4" viewBox="0 0 80 80" width="40" height="40">
+                <g opacity=".12">
+                    <circle cx="40" cy="25" r="12" fill="var(--blush)" />
+                    <circle cx="55" cy="40" r="12" fill="var(--blush)" />
+                    <circle cx="40" cy="55" r="12" fill="var(--blush)" />
+                    <circle cx="25" cy="40" r="12" fill="var(--blush)" />
+                    <circle cx="40" cy="40" r="8" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M19 12H5M11 6l-6 6 6 6" />
+            </svg>
+            Back to hearts
+        </button>
+
+        <div class="letter-stage">
+            <p class="sub-eyebrow">From our heart to yours</p>
+            <h2 class="sub-title">A Letter for Inay</h2>
+
+            <div class="envelope-wrap">
+                <div class="envelope" id="envelope">
+
+                    <div class="env-body">
+                        <div class="env-flap-left"></div>
+                        <div class="env-flap-right"></div>
+                        <div class="env-flap-bottom"></div>
+                    </div>
+
+                    <div class="env-flap-top" id="envFlap"></div>
+
+                    <div class="letter-paper" id="letterPaper">
+                        <div class="letter-content">
+                            <p class="letter-greeting">Dearest Mom,</p>
+                            <p>There are no words grand enough to hold everything you are to me — but I will try,
+                                because you deserve every attempt.</p>
+                            <p>You are the warmth I run toward on cold days, the voice that steadies me when nothing
+                                else does. You taught me that love is not just a feeling — it is showing up, every
+                                single day, even when it is hard.</p>
+                            <p>Thank you for every sacrifice I never saw, every prayer whispered after lights-out, every
+                                hug that lasted exactly as long as I needed it to.</p>
+                            <p>I carry you with me — in my laugh, in my stubbornness, in the way I refuse to give up.
+                                You are woven into who I am.</p>
+                            <p>Happy Mother's Day. I love you more than any letter can say.</p>
+                            <p class="letter-sign">With all my heart,<br /><em>Your child</em></p>
+                        </div>
+                    </div>
+
+                    <div class="env-seal" id="envSeal">
+                        <svg viewBox="0 0 52 52" width="52" height="52">
+                            <circle cx="26" cy="26" r="22" fill="var(--crimson)" />
+                            <path d="M26 34 C26 34 13 23 13 16 A9.3 9.3 0 0 1 26 9 A9.3 9.3 0 0 1 39 16 C39 23 26 34 26
+                                34Z" fill="rgba(255,255,255,.28)" />
+                            <circle cx="26" cy="26" r="22" fill="none" stroke="var(--rose)" stroke-width="1.5" />
+                        </svg>
+                    </div>
+
+                    <!--open / close buttons-->
+                    <button class="open-env-btn" id="openEnvBtn" onclick="openEnvelope()">Open the Envelope</button>
+                    <button class="close-env-btn" id="closeEnvBtn" onclick="closeEnvelope()">Close the
+                        Envelope</button>
+
+                </div>
+            </div>
+        </div>
+
+        <audio id="envMusic" loop preload="none">
+            <source src="assets/music.mp3" type="audio/mpeg" />
+        </audio>
+    </section>
+
+
+    <!-- ═══════════ GALLERY SCENE ═══════════ -->
+    <section id="gallery-scene" class="sub-scene gallery-scene">
+        <div class="cute-bg">
+            <div class="cute-sparkle sp16">✿</div>
+            <div class="cute-sparkle sp17">❁</div>
+            <div class="cute-sparkle sp18">♡</div>
+            <svg class="cute-deco deco-flower5" viewBox="0 0 80 80" width="50" height="50">
+                <g opacity=".14">
+                    <circle cx="40" cy="25" r="12" fill="var(--rose)" />
+                    <circle cx="55" cy="40" r="12" fill="var(--rose)" />
+                    <circle cx="40" cy="55" r="12" fill="var(--rose)" />
+                    <circle cx="25" cy="40" r="12" fill="var(--rose)" />
+                    <circle cx="40" cy="40" r="8" fill="var(--blush)" />
+                </g>
+            </svg>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M19 12H5M11 6l-6 6 6 6" />
+            </svg>
+            Back to hearts
+        </button>
+
+        <div class="gallery-header">
+            <p class="sub-eyebrow">Our most treasured photos</p>
+            <h2 class="sub-title">Unforgettable Moments of Inay</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-card" style="--rot:-4deg;--delay:0.05s">
+                <div class="gc-tape"></div>
+                <div class="gc-inner">
+                    <img src="assets/pic1.png" alt="Memory 1" />
+                    <p class="gc-caption">Always smiling</p>
+                </div>
+            </div>
+            <div class="gallery-card" style="--rot:3deg;--delay:0.18s">
+                <div class="gc-tape"></div>
+                <div class="gc-inner">
+                    <img src="assets/pic2.png" alt="Memory 2" />
+                    <p class="gc-caption">Pure joy</p>
+                </div>
+            </div>
+            <div class="gallery-card" style="--rot:-3deg;--delay:0.31s">
+                <div class="gc-tape"></div>
+                <div class="gc-inner">
+                    <img src="assets/pic3.png" alt="Memory 3" />
+                    <p class="gc-caption">Happy Birthday!</p>
+                </div>
+            </div>
+            <div class="gallery-card" style="--rot:4deg;--delay:0.44s">
+                <div class="gc-tape"></div>
+                <div class="gc-inner">
+                    <img src="assets/pic4.png" alt="Memory 4" />
+                    <p class="gc-caption">Our greatest love</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-deco gd-tl"></div>
+        <div class="gallery-deco gd-br"></div>
+    </section>
+
+    <!-- ═══════════ VIDEO SCENE ═══════════ -->
+    <section id="video-scene" class="sub-scene">
+        <div class="cute-bg">
+            <div class="cute-sparkle sp19">✦</div>
+            <div class="cute-sparkle sp20">❀</div>
+            <svg class="cute-deco deco-butterfly3" viewBox="0 0 60 40" width="40" height="28">
+                <g opacity=".12">
+                    <ellipse cx="20" cy="15" rx="16" ry="12" fill="var(--rose)" />
+                    <ellipse cx="40" cy="15" rx="16" ry="12" fill="var(--rose)" />
+                    <ellipse cx="22" cy="28" rx="10" ry="8" fill="var(--blush)" />
+                    <ellipse cx="38" cy="28" rx="10" ry="8" fill="var(--blush)" />
+                    <rect x="29" y="5" width="2" height="30" rx="1" fill="var(--crimson)" />
+                </g>
+            </svg>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M19 12H5M11 6l-6 6 6 6" />
+            </svg>
+            Back to hearts
+        </button>
+
+        <div class="video-stage">
+            <p class="sub-eyebrow">A message from the heart</p>
+            <h2 class="sub-title">A Video for Inay!</h2>
+            <div class="video-frame-outer">
+                <div class="vfc vfc-tl"></div>
+                <div class="vfc vfc-tr"></div>
+                <div class="vfc vfc-bl"></div>
+                <div class="vfc vfc-br"></div>
+                <video id="momVideo" controls preload="metadata">
+                    <source src="assets/video.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <p class="video-caption">Made with love!</p>
+        </div>
+    </section>
+
+    <!-- ═══════════ REASONS I LOVE YOU ═══════════ -->
+    <section id="reasons-scene" class="sub-scene reasons-scene">
+        <div class="cute-bg">
+            <div class="cute-sparkle sp7">♡</div>
+            <div class="cute-sparkle sp8">✿</div>
+            <div class="cute-sparkle sp9">❀</div>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <path d="M19 12H5M11 6l-6 6 6 6" />
+            </svg>
+            Back to hearts
+        </button>
+
+        <div class="reasons-stage">
+            <p class="sub-eyebrow">Reasons why we love you, Inay</p>
+            <h2 class="sub-title">Gusto lang po naming sabihin sayo Inay na...</h2>
+
+            <div class="reasons-card" id="reasonsCard">
+                <div class="reason-icon" id="reasonIcon"><img
+                        src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f496/512.png" alt="sticker"
+                        class="sticker-img" /></div>
+                <p class="reason-text" id="reasonText">You always know how to make everything better.</p>
+                <div class="reason-counter">
+                    <span id="reasonNum">1</span> / <span id="reasonTotal">12</span>
+                </div>
+            </div>
+
+            <div class="reasons-nav">
+                <button class="reason-btn" id="prevReason" onclick="prevReason()">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round">
+                        <path d="M19 12H5M11 6l-6 6 6 6" />
+                    </svg>
+                </button>
+                <button class="reason-btn reason-btn-shuffle" id="shuffleReason" onclick="shuffleReason()">
+                    Click po here!
+                </button>
+                <button class="reason-btn" id="nextReason" onclick="nextReason()">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Countdown Timer (bottom of screen) -->
+    <div class="countdown-float" id="countdownWrap">
+        <p class="countdown-label" id="countdownLabel">Mother's Day is in</p>
+        <div class="countdown-boxes">
+            <div class="countdown-box">
+                <span class="countdown-num" id="cdDays">00</span>
+                <span class="countdown-unit">Days</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+                <span class="countdown-num" id="cdHours">00</span>
+                <span class="countdown-unit">Hours</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+                <span class="countdown-num" id="cdMins">00</span>
+                <span class="countdown-unit">Mins</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+                <span class="countdown-num" id="cdSecs">00</span>
+                <span class="countdown-unit">Secs</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Virtual Hug Container -->
+    <div class="hug-container" id="hugContainer"></div>
+
+    <!-- Photo Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" aria-label="Close">✕</button>
+        <img id="lightboxImg" src="" alt="Full photo" />
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Floating Music Toggle -->
+    <button class="music-toggle" id="musicToggle" onclick="toggleMusic()" aria-label="Toggle music">
+        <img id="musicIcon" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f507/512.png" alt="music off"
+            class="music-toggle-img" />
+    </button>
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
